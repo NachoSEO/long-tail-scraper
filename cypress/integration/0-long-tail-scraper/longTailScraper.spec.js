@@ -13,7 +13,7 @@ describe('Time to get some long tail queries', () => {
     cy.wait(500)
 
     cy.get('input[name=q]')
-      .type('* chrome extensions')
+      .type('* value') // Change value here
 
     cy.get('ul[role]')
       .then($queries => {
